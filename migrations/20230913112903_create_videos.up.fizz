@@ -1,0 +1,9 @@
+create_table("videos") {
+  t.Column("id", "bigint", {primary: true})
+  t.Column("file_path", "string", {"size": 200})
+  t.Column("title", "string", {"size": 100})
+  t.Column("description", "text")
+  t.Column("deleted_at", "timestamp", {"null": true})
+}
+
+add_index("videos", "file_path", {"unique": true})

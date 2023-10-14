@@ -1,0 +1,13 @@
+/storage/*
+gin-bin
+
+# OS generated
+.keep
+.DS_Store
+.DS_Store?
+
+# Configuration file
+.env
+
+# build
+gotube
